@@ -1,19 +1,28 @@
 {
   "name": "queen-smiley-md",
-  "version": "1.0.0",
-  "description": "Queen Smiley MD - Premium WhatsApp Bot",
+  "version": "2.0.0",
+  "description": "Queen Smiley MD - Premium WhatsApp Bot with Auto-Updating Commands",
   "main": "index.js",
   "scripts": {
     "start": "clear && node index.js",
     "dev": "clear && nodemon index.js",
-    "simple": "clear && node simple.js",
+    "pair": "clear && node pair-code.js",
+    "qr": "clear && node index.js",
     "update": "git pull origin main && npm install",
     "restart": "pkill -f node && clear && npm start",
     "stop": "pkill -f node",
     "logs": "pm2 logs queen-smiley",
-    "status": "git status"
+    "status": "git status",
+    "backup": "tar -czf queen-backup-$(date +%Y%m%d).tar.gz sessions/ database/",
+    "clean": "rm -rf sessions/ database/db.json && npm start"
   },
-  "keywords": ["whatsapp-bot", "queen-smiley", "baileys"],
+  "keywords": [
+    "whatsapp-bot",
+    "queen-smiley",
+    "baileys",
+    "multi-device",
+    "premium-bot"
+  ],
   "author": "Paxton",
   "license": "ISC",
   "dependencies": {
