@@ -6,7 +6,12 @@
   "scripts": {
     "start": "clear && node index.js",
     "dev": "clear && nodemon index.js",
-    "simple": "clear && node simple.js"
+    "simple": "clear && node simple.js",
+    "update": "git pull origin main && npm install",
+    "restart": "pkill -f node && clear && npm start",
+    "stop": "pkill -f node",
+    "logs": "pm2 logs queen-smiley",
+    "status": "git status"
   },
   "keywords": ["whatsapp-bot", "queen-smiley", "baileys"],
   "author": "Paxton",
