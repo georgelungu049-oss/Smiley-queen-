@@ -1,0 +1,26 @@
+{
+  "name": "queen-smiley-md",
+  "version": "1.0.0",
+  "description": "Queen Smiley MD - Premium WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && node index.js",
+    "dev": "clear && nodemon index.js",
+    "simple": "clear && node simple.js"
+  },
+  "keywords": ["whatsapp-bot", "queen-smiley", "baileys"],
+  "author": "Paxton",
+  "license": "ISC",
+  "dependencies": {
+    "silva-baileys": "latest",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.17.2",
+    "colors": "^1.4.0",
+    "moment": "^2.29.4",
+    "axios": "^1.6.2",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
